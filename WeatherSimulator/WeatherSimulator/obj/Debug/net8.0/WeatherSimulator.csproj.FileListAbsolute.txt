@@ -1,0 +1,15 @@
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/bin/Debug/net8.0/WeatherSimulator
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/bin/Debug/net8.0/WeatherSimulator.deps.json
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/bin/Debug/net8.0/WeatherSimulator.runtimeconfig.json
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/bin/Debug/net8.0/WeatherSimulator.dll
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/bin/Debug/net8.0/WeatherSimulator.pdb
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.AssemblyInfoInputs.cache
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.AssemblyInfo.cs
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.sourcelink.json
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.dll
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/refint/WeatherSimulator.dll
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.pdb
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/WeatherSimulator.genruntimeconfig.cache
+/Users/user/Desktop/developer/CSharp/WeatherSimulator/WeatherSimulator/obj/Debug/net8.0/ref/WeatherSimulator.dll

@@ -20,5 +20,17 @@
             }
 
         }
+        static double CalculateAverage(int[] temperature)
+        {
+            int sum = 0;
+          foreach(int i in temperature)
+            {
+                sum += temperature[i];
+            }
+
+            double average = sum / temperature.Length;
+
+            return average;
+        }
     }
 }

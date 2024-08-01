@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WeatherSimulator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+152e6be2d258c0dca35498a2d8868a493033d698")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1b9053b1efc388cf6ec7f8f6759c5cc37d0d27c")]
 [assembly: System.Reflection.AssemblyProductAttribute("WeatherSimulator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WeatherSimulator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

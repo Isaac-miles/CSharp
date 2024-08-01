@@ -20,11 +20,14 @@
             }
 
            Console.WriteLine($" Average Temperature is {CalculateAverage(temperature)}");
+            Console.WriteLine($"Max temp was {temperature.Max()}");
+            Console.WriteLine($"Min temp was {temperature.Min()}");
+
 
         }
         static double CalculateAverage(int[] temperature)
         {
-            int sum = 0;
+            double sum = 0;
             for(int i= 0; i < temperature.Length; i++)
             {
                 sum += temperature[i];

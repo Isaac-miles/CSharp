@@ -8,6 +8,7 @@ namespace ClassApp
         private static int nextId = 0;
         private readonly int _id;
 
+        public int Id { get => _id; }
         public string Name { get; set; }
 		public string Address { get; set; }
 		public string ContactNumber { get; set; }

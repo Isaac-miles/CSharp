@@ -10,7 +10,9 @@ namespace ClassApp
 
 		public string Model { get=> model; set => model = value; }
 
-        public string Make { get => make;
+        public string Make {
+
+			get => make;
 
 			set{
 				if (string.IsNullOrEmpty(value))

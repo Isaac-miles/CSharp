@@ -6,7 +6,7 @@ class Program
     {
         Car toyota = new Car("Sport", "Limited", 2019);
 
-        Console.WriteLine(toyota.ToString());
+        Console.WriteLine(toyota.Make);
        
     }
 }

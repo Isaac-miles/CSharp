@@ -13,6 +13,7 @@ namespace ClassApp
 
         //Backing field for write-only property
         private string _password;
+        public string Password { set { _password = value; } }
 
         public int Id { get => _id; }
         public string Name { get; set; }

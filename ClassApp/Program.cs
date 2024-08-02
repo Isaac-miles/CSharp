@@ -19,6 +19,8 @@ class Program
         Customer Joy = new Customer("Joy", "iko@gmail.com", "Josiah");
         Joy.getCustomerDetails();
         Console.WriteLine(Joy.Id);
+
+        Joy.Password = "@123Passcode@$%";
     }
 }
 

@@ -4,9 +4,12 @@ class Program
 {
     static void Main(string[] args)
     {
-        Car toyota = new Car("Sport", "Limited", 2019);
+        Customer mike = new Customer();
+        Console.WriteLine("Enter username");
 
-        Console.WriteLine(toyota.Make);
+        mike.Name = Console.ReadLine();
+
+        Console.WriteLine(mike.Name);
        
     }
 }

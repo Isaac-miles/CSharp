@@ -10,7 +10,10 @@ class Program
         mike.Name = Console.ReadLine();
 
         Console.WriteLine(mike.Name);
-       
+
+        mike.SetDetails("miles", "miles@gmial", "Isaac");
+        Console.WriteLine(mike.Name);
+        
     }
 }
 

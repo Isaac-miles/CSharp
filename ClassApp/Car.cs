@@ -21,6 +21,12 @@ namespace ClassApp
 
 		}
 
+		public string Drive()
+		{
+			return $" driving {this.Make}";
+			
+		}
+
 	}
 }
 

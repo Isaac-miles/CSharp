@@ -29,11 +29,16 @@ namespace ClassApp
 		}
 
 
-        public void SetDetails(string name, string address, string contactNumber)
+        public void SetCustomerDetails(string name, string address, string contactNumber)
         {
             this.Address = address;
             this.Name = name;
             this.ContactNumber = contactNumber;
+        }
+
+        public void getCustomerDetails()
+        {
+            Console.WriteLine($"userId: {this._id} name: {this.Name} address {this.Address}  contact {this.Address}");
         }
 
         public static void MakeMe()

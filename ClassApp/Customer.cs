@@ -3,10 +3,16 @@ using System.Security.Cryptography;
 
 namespace ClassApp
 {
-	public class Customer
+	internal class Customer
 	{
+        //static field to hold the next ID available
         private static int nextId = 0;
+
+        //Read-only instance field initialized from the ctor
         private readonly int _id;
+
+        //Backing field for write-only property
+        private string _password;
 
         public int Id { get => _id; }
         public string Name { get; set; }

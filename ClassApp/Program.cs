@@ -11,9 +11,13 @@ class Program
 
         Console.WriteLine(mike.Name);
 
-        mike.SetDetails("miles", "miles@gmial", "Isaac");
+        mike.SetCustomerDetails("miles", "miles@gmial", "Isaac");
         Console.WriteLine(mike.Name);
-        
+
+        mike.getCustomerDetails();
+
+        Customer Joy = new Customer("Joy", "iko@gmail.com", "Josiah");
+        Joy.getCustomerDetails();
     }
 }
 

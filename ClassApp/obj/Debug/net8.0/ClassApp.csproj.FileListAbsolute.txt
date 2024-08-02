@@ -1,0 +1,15 @@
+/Users/user/Desktop/developer/CSharp/ClassApp/bin/Debug/net8.0/ClassApp
+/Users/user/Desktop/developer/CSharp/ClassApp/bin/Debug/net8.0/ClassApp.deps.json
+/Users/user/Desktop/developer/CSharp/ClassApp/bin/Debug/net8.0/ClassApp.runtimeconfig.json
+/Users/user/Desktop/developer/CSharp/ClassApp/bin/Debug/net8.0/ClassApp.dll
+/Users/user/Desktop/developer/CSharp/ClassApp/bin/Debug/net8.0/ClassApp.pdb
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.AssemblyInfoInputs.cache
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.AssemblyInfo.cs
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.sourcelink.json
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.dll
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/refint/ClassApp.dll
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.pdb
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ClassApp.genruntimeconfig.cache
+/Users/user/Desktop/developer/CSharp/ClassApp/obj/Debug/net8.0/ref/ClassApp.dll

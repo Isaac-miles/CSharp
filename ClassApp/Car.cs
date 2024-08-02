@@ -4,14 +4,31 @@ namespace ClassApp
 
 	public class Car
 	{
-        string type;
+        private string model;
 		string make;
 		int year;
 
-        public Car(string type, string make, int year)
+		public string Model { get=> model; set => model = value; }
+
+        public string Make { get => make;
+
+			set{
+				if (string.IsNullOrEmpty(value))
+				{
+					make = "default";
+				}
+				else
+				{
+					make = value;
+				}
+			}
+
+		}
+
+        public Car(string model, string make, int year)
 		{
-			this.type = type;
-			this.make = make;
+			this.model = model;
+			this.Make = make;
 			this.year = year;
 
 		}

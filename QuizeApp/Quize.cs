@@ -20,7 +20,22 @@ namespace QuizeApp
 				Console.WriteLine($"Question {questionNumber + 1}");
 				DisplayQuestion(question);
 				int userChoice = GetUserChoice();
-			}
+
+				if (question.IsCorrctAnswer(userChoice))
+				{
+				Console.ForegroundColor = ConsoleColor.Green;
+					Console.WriteLine("Corrcet!!!");
+					Console.ResetColor();
+
+				}
+				else
+				{
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Failed!!!");
+                    Console.ResetColor();
+					Console.WriteLine($"The correct answer is {questions[question.CorrectAnswerIndex]}");
+                }
+            }
 		}
 
 		public void DisplayQuestion(Questions question)

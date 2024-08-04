@@ -4,7 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Questions[] questions = new Questions[]
+        {
+            new Questions(
+                "what is bybit ",
+                new string[]{"store", "bitcoin","an exchange app"},
+                2)
+        };
     }
 }
 

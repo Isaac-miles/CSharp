@@ -7,9 +7,16 @@ namespace QuizeApp
 		public string[] Answers { get; set; }
 		public int CorrectAnswerIndex { get; set; }
 
-        public Questions()
+        public Questions(string questionText, string[] answers, int correctAnswerIndex)
 		{
-			
+			QuestionText = questionText;
+			Answers = answers;
+			CorrectAnswerIndex = correctAnswerIndex;
+		}
+
+		public bool IsCorrctAnswer(int choice)
+		{
+			return CorrectAnswerIndex == choice;
 		}
 	}
 }

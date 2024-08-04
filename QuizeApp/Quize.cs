@@ -17,7 +17,9 @@ namespace QuizeApp
 
 			foreach(Questions question in questions)
 			{
-
+				Console.WriteLine($"Question {questionNumber + 1}");
+				DisplayQuestion(question);
+				int userChoice = GetUserChoice();
 			}
 		}
 

@@ -11,6 +11,9 @@ class Program
                 new string[]{"store", "bitcoin","an exchange app"},
                 2)
         };
+
+        Quize myQuize = new Quize(questions);
+        myQuize.DisplayQuestion(questions[0]);
     }
 }
 

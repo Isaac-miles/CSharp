@@ -1,0 +1,15 @@
+/Users/user/Desktop/developer/CSharp/QuizeApp/bin/Debug/net8.0/QuizeApp
+/Users/user/Desktop/developer/CSharp/QuizeApp/bin/Debug/net8.0/QuizeApp.deps.json
+/Users/user/Desktop/developer/CSharp/QuizeApp/bin/Debug/net8.0/QuizeApp.runtimeconfig.json
+/Users/user/Desktop/developer/CSharp/QuizeApp/bin/Debug/net8.0/QuizeApp.dll
+/Users/user/Desktop/developer/CSharp/QuizeApp/bin/Debug/net8.0/QuizeApp.pdb
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.AssemblyInfoInputs.cache
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.AssemblyInfo.cs
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.sourcelink.json
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.dll
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/refint/QuizeApp.dll
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.pdb
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/QuizeApp.genruntimeconfig.cache
+/Users/user/Desktop/developer/CSharp/QuizeApp/obj/Debug/net8.0/ref/QuizeApp.dll

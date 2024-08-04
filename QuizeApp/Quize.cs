@@ -10,9 +10,20 @@ namespace QuizeApp
 			this.questions = questions;
 		}
 
+		public void StartQuize()
+		{
+			Console.WriteLine("Welcome to you quize");
+			int questionNumber = 1; //to display question numbers
+
+			foreach(Questions question in questions)
+			{
+
+			}
+		}
+
 		public void DisplayQuestion(Questions question)
 		{
-			Console.ForegroundColor = ConsoleColor.DarkRed;
+			Console.ForegroundColor = ConsoleColor.DarkYellow;
 			Console.WriteLine("QUESTION ?");
 			Console.ResetColor();
 			Console.WriteLine(question.QuestionText);
@@ -35,9 +46,10 @@ namespace QuizeApp
 			while(!int.TryParse(userInput, out choice) || choice < 1 || choice > 4)
 			{
 				Console.WriteLine("Invalid choice, please enter a number that states your answer choice within the given options");
+				userInput = Console.ReadLine();
 			}
 
-			return choice;
+			return choice-1; //adjust based on the indexing answers are displayed
 		}
 	}
 }

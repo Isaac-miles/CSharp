@@ -46,7 +46,7 @@ namespace ClassApp
 
         public void getCustomerDetails()
         {
-            Console.WriteLine($"userId: {this._id} name: {this.Name} address {this.Address}  contact {this.Address}");
+            Console.WriteLine($"userId: {this._id} name: {this.Name} address {this.Address}  contact {this.Address} passcode: {this._password}");
         }
 
         public static void MakeMe()

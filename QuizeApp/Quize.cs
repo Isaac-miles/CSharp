@@ -43,10 +43,11 @@ namespace QuizeApp
 
 		private void DisplayResult()
 		{
-            Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine($"Your Result is {_score}");
-
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"Your Result is {_score} out of {_questions.Length}");
             Console.ResetColor();
+
+			double percentage = (double)_score / _questions.Length;
         }
 
 		private void DisplayQuestion(Questions question)

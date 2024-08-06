@@ -3,11 +3,12 @@ namespace QuizeApp
 {
 	public class Quize
 	{
-		private Questions[] questions;
+		private Questions[] _questions;
+		private int _score;
 
 		public Quize(Questions[] questions)
 		{
-			this.questions = questions;
+			this._questions = questions;
 		}
 
 		public void StartQuize()
@@ -16,7 +17,7 @@ namespace QuizeApp
 			Console.WriteLine();
 			int questionNumber = 0; //to display question numbers
 
-			foreach(Questions question in questions)
+			foreach(Questions question in _questions)
 			{
 				Console.WriteLine($"Question {questionNumber + 1}");
 				DisplayQuestion(question);

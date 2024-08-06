@@ -4,7 +4,7 @@ namespace QuizeApp
 	public class Quize
 	{
 		private Questions[] _questions;
-		private int _score;
+		private int _score = 0;
 
 		public Quize(Questions[] questions)
 		{
@@ -28,6 +28,7 @@ namespace QuizeApp
 				Console.ForegroundColor = ConsoleColor.Green;
 					Console.WriteLine("Corrcet!!!");
 					Console.ResetColor();
+					_score++;
 
 				}
 				else
@@ -39,6 +40,13 @@ namespace QuizeApp
                 }
             }
 		}
+
+		private void DisplayResult()
+		{
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.WriteLine("Your Result");
+            Console.ResetColor();
+        }
 
 		private void DisplayQuestion(Questions question)
 		{

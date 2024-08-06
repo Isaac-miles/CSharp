@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{3E68F838-E084-4213-B291-029A726B600B}|Default">
-  <MonoDevelop.Ide.ItemProperties.QuizeApp FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.QuizeApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Quize.cs">
+    <Files>
+      <File FileName="Program.cs" Line="16" Column="18" IsPinned="True" />
+      <File FileName="Quize.cs" Line="74" Column="1" />
+      <File FileName="Questions.cs" Line="19" Column="38" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="QuizeApp">
+            <Node name="QuizeApp">
+              <Node name="Quize.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

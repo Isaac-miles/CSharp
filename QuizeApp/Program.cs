@@ -7,9 +7,13 @@ class Program
         Questions[] questions = new Questions[]
         {
             new Questions(
-                "what is bybit ",
+                "what is BYBIT ",
                 new string[]{"store", "bitcoin","an exchange app"},
-                2)
+                2),
+            new Questions(
+                "what is PEPE ",
+                new string[]{"Investor", "Meme  Coin","an exchange app"},
+                1)
         };
 
         Quize myQuize = new Quize(questions);

@@ -12,8 +12,9 @@ namespace QuizeApp
 
 		public void StartQuize()
 		{
-			Console.WriteLine("Welcome to you quize");
-			int questionNumber = 1; //to display question numbers
+			Console.WriteLine("Welcome to your quize");
+			Console.WriteLine();
+			int questionNumber = 0; //to display question numbers
 
 			foreach(Questions question in questions)
 			{
@@ -33,15 +34,14 @@ namespace QuizeApp
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Failed!!!");
                     Console.ResetColor();
-					Console.WriteLine($"The correct answer is {questions[question.CorrectAnswerIndex]}");
+					Console.WriteLine($"The correct answer is {question.Answers[question.CorrectAnswerIndex]}");
                 }
             }
 		}
 
-		public void DisplayQuestion(Questions question)
+		private void DisplayQuestion(Questions question)
 		{
 			Console.ForegroundColor = ConsoleColor.DarkYellow;
-			Console.WriteLine("QUESTION ?");
 			Console.ResetColor();
 			Console.WriteLine(question.QuestionText);
 			for (int i = 0; i < question.Answers.Length; i++)

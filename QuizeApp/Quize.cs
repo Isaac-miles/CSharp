@@ -44,7 +44,8 @@ namespace QuizeApp
 		private void DisplayResult()
 		{
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.WriteLine("Your Result");
+            Console.WriteLine($"Your Result is {_score}");
+
             Console.ResetColor();
         }
 

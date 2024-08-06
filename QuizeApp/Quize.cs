@@ -48,6 +48,18 @@ namespace QuizeApp
             Console.ResetColor();
 
 			double percentage = (double)_score / _questions.Length;
+			if(percentage >= 0.8)
+			{
+                Console.ForegroundColor = ConsoleColor.Green;
+				Console.WriteLine($"Percentage score is {percentage} Good!!");
+
+			}
+			else
+			{
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Percentage score is {percentage} Poor!!");
+
+            }
         }
 
 		private void DisplayQuestion(Questions question)

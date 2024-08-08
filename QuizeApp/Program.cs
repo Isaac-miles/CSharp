@@ -22,10 +22,11 @@ class Program
 
         Quize myQuize = new Quize(questions);
         myQuize.StartQuize();
-        LinkedList<Questions> myLinkedList = new LinkedList<Questions>()
-        {
-
-        };
+        LinkedList<Questions> myLinkedList = new LinkedList<Questions>();
+        myLinkedList.AddFirst(new Questions(
+                "Is Sabinus a commedian from Nigeria ? ",
+                new string[] { "No", "Yes" },
+                1));
        
     }
 }

@@ -22,6 +22,7 @@ class Program
 
         Quize myQuize = new Quize(questions);
         myQuize.StartQuize();
+        LinkedList<Questions> myLinkedList = new LinkedList<Questions>();
     }
 }
 

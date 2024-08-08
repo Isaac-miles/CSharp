@@ -13,11 +13,15 @@ class Program
             new Questions(
                 "what is PEPE ",
                 new string[]{"Investor", "Meme  Coin","an exchange app"},
+                1),
+            new Questions(
+                "Is Sabinus a commedian from Nigeria ? ",
+                new string[]{"No", "Yes"},
                 1)
         };
 
         Quize myQuize = new Quize(questions);
-        //myQuize.DisplayQuestion(questions[0]);
+        myQuize.DisplayQuestion(questions[0]);
         myQuize.StartQuize();
     }
 }

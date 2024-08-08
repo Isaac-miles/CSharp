@@ -39,7 +39,9 @@ namespace QuizeApp
 					Console.WriteLine($"The correct answer is {question.Answers[question.CorrectAnswerIndex]}");
                 }
             }
-		}
+
+			DisplayResult();
+;		}
 
 		private void DisplayResult()
 		{
@@ -60,9 +62,11 @@ namespace QuizeApp
                 Console.WriteLine($"Percentage score is {percentage} Poor!!");
 
             }
+            Console.ResetColor();
+			
         }
 
-		private void DisplayQuestion(Questions question)
+        private void DisplayQuestion(Questions question)
 		{
 			Console.ForegroundColor = ConsoleColor.DarkYellow;
 			Console.ResetColor();

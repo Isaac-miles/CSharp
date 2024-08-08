@@ -27,6 +27,8 @@ class Program
                 "Is Sabinus a commedian from Nigeria ? ",
                 new string[] { "No", "Yes" },
                 1));
+
+        Console.WriteLine(myLinkedList.ToString());
        
     }
 }

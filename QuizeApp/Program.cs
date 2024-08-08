@@ -28,7 +28,7 @@ class Program
                 new string[] { "No", "Yes" },
                 1));
 
-        Console.WriteLine(myLinkedList.ToString());
+        Console.WriteLine(myLinkedList);
        
     }
 }

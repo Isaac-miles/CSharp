@@ -21,7 +21,7 @@ class Program
         };
 
         Quize myQuize = new Quize(questions);
-        //myQuize.StartQuize();
+        myQuize.StartQuize();
 
 
     }

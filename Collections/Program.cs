@@ -9,6 +9,8 @@ class Program
         Console.WriteLine(numbers.Any(x => x > 10));
 
         Dictionary<int, string> employees = new Dictionary<int, string>();
+        employees.Add(2, "miles");
+        employees.Add(0, "doe");
 
     }
 }

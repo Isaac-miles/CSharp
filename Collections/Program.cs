@@ -12,6 +12,11 @@ class Program
         employees.Add(2, "miles");
         employees.Add(0, "doe");
 
+        foreach(KeyValuePair<int, string> employee in employees)
+        {
+            Console.WriteLine("emID: {0} emName: {1} ",employee.Key,employee.Value);
+        }
+
     }
 }
 

@@ -34,8 +34,8 @@ class Program
 
         Dictionary<string, string> mysM = new Dictionary<string, string>()
         {
-            ["NA"] = "ZIco",
-            //{ "Davis", "Isaac" },
+            //["NA"] = "ZIco",
+            { "Davis", "Isaac" },
 
         };
 

@@ -35,7 +35,7 @@ class Program
         Dictionary<string, string> mysM = new Dictionary<string, string>()
         {
             //["NA"] = "ZIco",
-            { "Davis", "Isaac" },
+            { "DA", "Isaac" },
 
         };
 
@@ -44,7 +44,7 @@ class Program
             Console.WriteLine(d.Value);
         };
 
-        if(mysM.TryGetValue("NA", out string value))
+        if(mysM.TryGetValue("da", out string value))
             {
             Console.WriteLine(value);
         }

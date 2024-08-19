@@ -39,14 +39,14 @@ class Program
 
         };
 
-        foreach(var d in mysM)
+        foreach(KeyValuePair<string,string > d in mysM)
         {
             Console.WriteLine(d.Value);
         };
 
         if(mysM.TryGetValue("DA", out string value))
             {
-            Console.WriteLine(value);
+            //Console.WriteLine(value);
         }
 
         

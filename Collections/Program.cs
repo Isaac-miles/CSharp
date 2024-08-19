@@ -46,7 +46,7 @@ class Program
 
         if(mysM.TryGetValue("DA", out string value))
             {
-            Console.WriteLine(value);
+            //Console.WriteLine(value);
         }
 
         

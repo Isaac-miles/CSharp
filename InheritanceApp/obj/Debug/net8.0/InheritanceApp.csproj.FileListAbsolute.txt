@@ -1,0 +1,15 @@
+/Users/user/Desktop/developer/CSharp/InheritanceApp/bin/Debug/net8.0/InheritanceApp
+/Users/user/Desktop/developer/CSharp/InheritanceApp/bin/Debug/net8.0/InheritanceApp.deps.json
+/Users/user/Desktop/developer/CSharp/InheritanceApp/bin/Debug/net8.0/InheritanceApp.runtimeconfig.json
+/Users/user/Desktop/developer/CSharp/InheritanceApp/bin/Debug/net8.0/InheritanceApp.dll
+/Users/user/Desktop/developer/CSharp/InheritanceApp/bin/Debug/net8.0/InheritanceApp.pdb
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.AssemblyInfoInputs.cache
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.AssemblyInfo.cs
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.csproj.CoreCompileInputs.cache
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.sourcelink.json
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.dll
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/refint/InheritanceApp.dll
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.pdb
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/InheritanceApp.genruntimeconfig.cache
+/Users/user/Desktop/developer/CSharp/InheritanceApp/obj/Debug/net8.0/ref/InheritanceApp.dll

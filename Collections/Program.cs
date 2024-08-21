@@ -41,7 +41,7 @@ class Program
 
         foreach(KeyValuePair<string,string > d in mysM)
         {
-            Console.WriteLine(d.Value);
+            //Console.WriteLine(d.Value);
         };
 
         if(mysM.TryGetValue("DA", out string value))

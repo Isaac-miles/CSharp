@@ -41,11 +41,11 @@ class Program
 
     static void Main(string[] args)
     {
-        PayPalProcessor processPay = new PayPalProcessor();
+        IPaymentProcessor processPay = new PayPalProcessor();
         processPay.ProcessPayment(10);
 
         PaymentService servicePay = new PaymentService(processPay);
-        servicePay.ProcessOrderPayment(15);
+        servicePay.ProcessOrderPayment(15.0m);
     }
 
 }

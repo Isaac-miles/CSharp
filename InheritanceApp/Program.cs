@@ -2,10 +2,6 @@
 
 class Program
 {
-    static void Main(string[] args)
-    {
-      
-    }
 
     public interface IPaymentProcessor
     {
@@ -36,6 +32,21 @@ class Program
         {
             _processor = processor;
         }
+
+        public void ProcessOrderPayment(decimal amount)
+        {
+            _processor.ProcessPayment(amount);
+        }
     }
+
+    static void Main(string[] args)
+    {
+        PayPalProcessor processPay = new PayPalProcessor();
+        processPay.ProcessPayment(10);
+
+        PaymentService servicePay = new PaymentService(processPay);
+        servicePay.ProcessOrderPayment(15);
+    }
+
 }
 

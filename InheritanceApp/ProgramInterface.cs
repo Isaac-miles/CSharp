@@ -20,7 +20,7 @@ class ProgramInterface
     {
         public void ProcessPayment(decimal amount)
         {
-            //Console.WriteLine("Processing paypal payment of " + amount);x
+            //Console.WriteLine("Processing paypal payment of " + amount);
         }
     }
 

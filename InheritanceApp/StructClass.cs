@@ -17,9 +17,11 @@ namespace InheritanceApp
 			this.y = y;
 
 		}
-		public void Distance()
+		public double DistanceTo( StructClass other)
 		{
-			Console.WriteLine($"{x}  and  {y}");
+			double dx = other.x - x;
+			double dy = other.y - y;
+			return Math.Sqrt(dx * dx + dy * dy);
 		}
 	}
 }

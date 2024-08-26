@@ -17,6 +17,7 @@ namespace InheritanceApp
 			this.y = y;
 
 		}
+
 		public double DistanceTo( StructClass other)
 		{
 			double dx = other.x - x;

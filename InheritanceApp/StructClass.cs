@@ -8,8 +8,13 @@ namespace InheritanceApp
 
 		public StructClass(int x, int y)
 		{
+			this.x = x;
+			this.y = y;
 
-
+		}
+		public void Display()
+		{
+			Console.WriteLine($"{x}  and  {y}");
 		}
 	}
 }

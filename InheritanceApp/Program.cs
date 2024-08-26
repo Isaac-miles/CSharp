@@ -22,7 +22,9 @@ namespace InheritanceApp
 			Console.WriteLine("Enum days "+ (int)days);
 
 			DateTime dateTime = new DateTime(2024, 2, 22);
-			Console.WriteLine(dateTime);
+			Console.WriteLine(DateTime.UtcNow);
+
+			Console.WriteLine(DateTime.Today.AddDays(1));
 		}
 		
 	}

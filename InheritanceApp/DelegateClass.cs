@@ -3,7 +3,7 @@ namespace InheritanceApp
 {
 	public class DelegateClass
 	{
-		public delegate void Notify(string message);
+		public delegate string Notify(string message);
 
 		public DelegateClass()
 		{
@@ -11,13 +11,14 @@ namespace InheritanceApp
 			Notify notifyDelegate = ShowMessage;
 
 			//invocation
-
+			notifyDelegate("Hello Delegating thr task");
 
 		}
 
-		static void ShowMessage(string message)
+		static string ShowMessage(string message)
 		{
 			Console.WriteLine(message);
+			return message;
 		}
 	}
 }

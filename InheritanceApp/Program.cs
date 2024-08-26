@@ -18,6 +18,11 @@ namespace InheritanceApp
 			//p1.x = 2;
 			//p1.y = 5;
 
+			EnumClass days = EnumClass.Fr;
+			Console.WriteLine("Enum days "+ (int)days);
+
+			DateTime dateTime = new DateTime(2024, 2, 22);
+			Console.WriteLine(dateTime);
 		}
 		
 	}

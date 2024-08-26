@@ -3,10 +3,15 @@ namespace InheritanceApp
 {
 	public struct StructClass
 	{
-		public int x { get; set; }
-		public int y { get; set; }
+		////properties
+		//public int x { get; set; }
+		//public int y { get; set; }
 
-		public StructClass(int x, int y)
+		//fields
+		public int x;
+		public int y;
+
+        public StructClass(int x, int y)
 		{
 			this.x = x;
 			this.y = y;

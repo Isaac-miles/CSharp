@@ -3,21 +3,21 @@ namespace InheritanceApp
 {
 	public struct StructClass
 	{
-		////properties
-		//public int x { get; set; }
-		//public int y { get; set; }
+		//properties
+		public double x { get; }
+		public double y { get;}
 
 		//fields
-		public int x;
-		public int y;
+		//public int x;
+		//public int y;
 
-        public StructClass(int x, int y)
+		public StructClass(int x, int y)
 		{
 			this.x = x;
 			this.y = y;
 
 		}
-		public void Display()
+		public void Distance()
 		{
 			Console.WriteLine($"{x}  and  {y}");
 		}

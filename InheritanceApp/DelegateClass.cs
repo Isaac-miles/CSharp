@@ -1,19 +1,46 @@
 ﻿using System;
 namespace InheritanceApp
 {
-	public class DelegateClass
+
+    public delegate int Comparison<T>(T x, T y);
+
+    public class Person
 	{
-		public delegate string Notify(string message);
+		public string Name { get; set; }
+		public int Age { get; set; }
 
-		public DelegateClass()
+		public Person(string name, int age)
 		{
-			//instantiation
-			Notify notifyDelegate = ShowMessage;
-
-			//invocation
-			notifyDelegate("Hello Delegating thr task");
-
+			Name = name;
+			Age = age;
 		}
+	}
+
+    public class SortMan
+    {
+        public void SortPersons(Person[] persons, Comparison<Person> comperer)
+        {
+            for (int i = 0; i < persons.Length - 1; i++)
+            {
+                for (int j = i +1; j < persons.Length; j++)
+                {
+                    if (comperer(persons[i], persons[j]) > 0)
+                    {
+                        var temp = persons[i];
+                        persons[i] = persons[j];
+                        persons[j] = temp;
+
+                    }
+                }
+            }
+        }
+    }
+
+    public class DelegateClass
+	{
+
+		
+
 
 		static string ShowMessage(string message)
 		{

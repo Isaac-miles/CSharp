@@ -62,10 +62,10 @@ namespace InheritanceApp
             return x.Age.CompareTo(y.Age);
         }
 
-        //static string CompareByName(Person x, Person y)
-        //{
-        //    return x.Name.CompareTo(y.Name);
-        //}
+        static int CompareByName(Person x, Person y)
+        {
+            return x.Name.CompareTo(y.Name);
+        }
     }
 }
 

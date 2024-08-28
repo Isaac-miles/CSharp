@@ -53,7 +53,10 @@ namespace InheritanceApp
     //subscribers to our temp monitor
     public class TemperatureAlert
     {
-
+        public void OnTemperatureChange(string message)
+        {
+            Console.WriteLine("Alert: "+ message);
+        }
     }
 
 
@@ -66,6 +69,8 @@ namespace InheritanceApp
             publiser.OnNotify += subscriber.OnEventRaised;
 
             publiser.RaiseEvent("Test");
+
+            //temp monitor example
         }
     }
 

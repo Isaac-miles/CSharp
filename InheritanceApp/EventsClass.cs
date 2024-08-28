@@ -42,9 +42,9 @@ namespace InheritanceApp
         }
 
         //the alerm event
-        protected void RaiseTemperatureAlarmEvent()
+        protected void RaiseTemperatureAlarmEvent(string message)
         {
-
+            TemperatureMonitoreEvent.Invoke(message);
         }
 
     }

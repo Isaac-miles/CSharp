@@ -3,7 +3,6 @@ namespace InheritanceApp
 {
 
     public delegate int Comparison<T>(T x, T y);
-    public delegate void Notify(string message);
 
     public class Person
 	{

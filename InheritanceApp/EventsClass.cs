@@ -64,11 +64,20 @@ namespace InheritanceApp
     }
 
     //subscribers to our temp monitor
-    public class TemperatureAlert
+    public class TemperatureHotAlert
     {
         public void OnTemperatureChange(object sender, TemperatureChangeEventArgs e)
         {
-            Console.WriteLine($"Alert: the temperature is {+e.Temperature} and sender is {sender} ");
+            Console.WriteLine($"Alert: the temperature is hot: {+e.Temperature} and sender is: {sender} ");
+        }
+    }
+
+    //subscriber 2
+    public class TemperatureCoolingAlert
+    {
+        public void OnTemperatureChange(object sender, TemperatureChangeEventArgs e)
+        {
+            Console.WriteLine($"Alert: the temperature is cold: {+e.Temperature} and sender is: {sender} ");
         }
     }
 
@@ -85,10 +94,11 @@ namespace InheritanceApp
 
             //temp monitor example
             TemMonitor monitorTemperature = new TemMonitor();
-            TemperatureAlert alertTemperture = new TemperatureAlert();
+            TemperatureHotAlert alertHotTemperture = new TemperatureHotAlert();
+            TemperatureCoolingAlert alertCoolTemperature = new TemperatureCoolingAlert();
 
             //multiDelegate or initiate subscriptions
-            monitorTemperature.OnTemperatureMonitoreEvent += alertTemperture.OnTemperatureChange;
+            monitorTemperature.OnTemperatureMonitoreEvent += alertHotTemperture.OnTemperatureChange;
 
             monitorTemperature.Temperature = 20;
             Console.WriteLine("Enter your room temperature");

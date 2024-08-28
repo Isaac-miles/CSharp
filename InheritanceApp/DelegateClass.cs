@@ -38,24 +38,24 @@ namespace InheritanceApp
 
     public class DelegateClass
 	{
-		static void Main(string[] args)
-		{
-            Person[] persons =
-            {
-                new Person("Mile",20),
-                new Person("Zico", 25),
-                new Person("Isaa", 26),
-                //new Person {Name ="Joy", Age=19}
-            };
+		//static void Main(string[] args)
+		//{
+  //          Person[] persons =
+  //          {
+  //              new Person("Mile",20),
+  //              new Person("Zico", 25),
+  //              new Person("Isaa", 26),
+  //              //new Person {Name ="Joy", Age=19}
+  //          };
 
-            SortMan sortM = new SortMan();
-            sortM.SortPersons(persons, CompareByName);
+  //          SortMan sortM = new SortMan();
+  //          sortM.SortPersons(persons, CompareByName);
 
-            foreach(var person in persons)
-            {
-                Console.WriteLine($"{person.Name}, {person.Age}");
-            }
-		}
+  //          foreach(var person in persons)
+  //          {
+  //              Console.WriteLine($"{person.Name}, {person.Age}");
+  //          }
+		//}
 
         static int CompareByAge(Person x, Person y)
         {

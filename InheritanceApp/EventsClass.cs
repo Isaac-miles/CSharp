@@ -99,6 +99,7 @@ namespace InheritanceApp
 
             //multiDelegate or initiate subscriptions
             monitorTemperature.OnTemperatureMonitoreEvent += alertHotTemperture.OnTemperatureChange;
+            monitorTemperature.OnTemperatureMonitoreEvent += alertCoolTemperature.OnTemperatureChange;
 
             monitorTemperature.Temperature = 20;
             Console.WriteLine("Enter your room temperature");

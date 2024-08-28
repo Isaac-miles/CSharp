@@ -3,6 +3,7 @@ namespace InheritanceApp
 {
 
     public delegate int Comparison<T>(T x, T y);
+    public delegate void Notify(string message);
 
     public class Person
 	{
@@ -49,7 +50,7 @@ namespace InheritanceApp
             };
 
             SortMan sortM = new SortMan();
-            sortM.SortPersons(persons, CompareByAge);
+            sortM.SortPersons(persons, CompareByName);
 
             foreach(var person in persons)
             {

@@ -68,12 +68,7 @@ namespace InheritanceApp
             return x.Name.CompareTo(y.Name);
         }
 
-        public event Notify OnNotify;
-
-        public void RaiseEvent(string message)
-        {
-            OnNotify.Invoke(message);
-        }
+      
     }
 }
 

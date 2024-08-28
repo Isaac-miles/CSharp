@@ -73,6 +73,13 @@ namespace InheritanceApp
             //temp monitor example
             TemMonitor monitorTemperature = new TemMonitor();
             TemperatureAlert alertTemperture = new TemperatureAlert();
+
+            //multiDelegate or initiate subscriptions
+            monitorTemperature.TemperatureMonitoreEvent += alertTemperture.OnTemperatureChange;
+
+            monitorTemperature.Temperature = 20;
+            Console.WriteLine("Enter your room temperature");
+            monitorTemperature.Temperature = int.Parse(Console.ReadLine());
         }
     }
 

@@ -28,6 +28,19 @@ namespace InheritanceApp
     {
         public event TemperatureChangeDelegate TemperatureMonitoreEvent;
 
+        private int _temp;
+        public int Temperature { get => _temp;
+
+            set
+            {
+                _temp = value;
+                if(_temp > 30)
+                {
+                    //Raise an alerm event
+                }
+            }
+        }
+
     }
 
     public class EventsClass

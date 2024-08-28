@@ -26,7 +26,11 @@ namespace InheritanceApp
 
     public class TemperatureChangeEventArgs : EventArgs
     {
-
+        public int Temperature { get; }
+        public TemperatureChangeEventArgs(int temp)
+        {
+            Temperature = temp;
+        }
     }
     public class TemMonitor
     {

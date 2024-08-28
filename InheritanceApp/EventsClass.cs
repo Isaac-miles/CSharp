@@ -22,7 +22,7 @@ namespace InheritanceApp
     }
 
     //TemMonitor
-    public delegate void TemperatureChangeDelegate(string message);
+    public delegate void TemperatureChangeDelegate(string message); //remodified below to use eventHandler
 
     public class TemperatureChangeEventArgs : EventArgs
     {
@@ -32,27 +32,33 @@ namespace InheritanceApp
             Temperature = temp;
         }
     }
+
+
     public class TemMonitor
     {
-        public event TemperatureChangeDelegate OnTemperatureMonitoreEvent;
+        //public event TemperatureChangeDelegate OnTemperatureMonitoreEvent;
+
+        public event EventHandler<TemperatureChangeEventArgs> OnTemperatureMonitoreEvent;
+
         private int _temp;
         public int Temperature { get => _temp;
 
             set
             {
-                _temp = value;
-                if(_temp > 30)
+                if(_temp != value)
                 {
+                    _temp = value;
                     //Raise an alerm event
-                    RaiseTemperatureAlarmEvent("Turn on the Heater Temp is above room temperature");
+
+                    RaiseTemperatureAlarmEvent(new TemperatureChangeEventArgs(_temp));
                 }
             }
         }
 
         //the alerm event
-        protected void RaiseTemperatureAlarmEvent(string message)
+        protected void RaiseTemperatureAlarmEvent(TemperatureChangeEventArgs e)
         {
-            OnTemperatureMonitoreEvent?.Invoke(message);
+            OnTemperatureMonitoreEvent?.Invoke(this,e);
         }
 
     }
@@ -60,9 +66,9 @@ namespace InheritanceApp
     //subscribers to our temp monitor
     public class TemperatureAlert
     {
-        public void OnTemperatureChange(string message)
+        public void OnTemperatureChange(object sender, TemperatureChangeEventArgs e)
         {
-            Console.WriteLine("Alert: "+ message);
+            Console.WriteLine($"Alert: the temperature is {+e.Temperature} and sender is {sender} ");
         }
     }
 

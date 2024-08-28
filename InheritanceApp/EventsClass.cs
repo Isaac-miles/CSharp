@@ -37,6 +37,7 @@ namespace InheritanceApp
                 if(_temp > 30)
                 {
                     //Raise an alerm event
+                    RaiseTemperatureAlarmEvent("Turn on the Heater Temp is above room temperature");
                 }
             }
         }
@@ -49,6 +50,11 @@ namespace InheritanceApp
 
     }
 
+    //subscribers to our temp monitor
+    public class TemperatureAlert
+    {
+
+    }
 
 
     public class EventsClass

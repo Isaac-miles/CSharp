@@ -71,6 +71,8 @@ namespace InheritanceApp
             publiser.RaiseEvent("Test");
 
             //temp monitor example
+            TemMonitor monitorTemperature = new TemMonitor();
+            TemperatureAlert alertTemperture = new TemperatureAlert();
         }
     }
 

@@ -69,6 +69,11 @@ namespace InheritanceApp
         }
 
         public event Notify OnNotify;
+
+        public void RaiseEvent(string message)
+        {
+            OnNotify.Invoke(message);
+        }
     }
 }
 

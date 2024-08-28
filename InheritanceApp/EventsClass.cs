@@ -41,7 +41,15 @@ namespace InheritanceApp
             }
         }
 
+        //the alerm event
+        protected void RaiseTemperatureAlarmEvent()
+        {
+
+        }
+
     }
+
+
 
     public class EventsClass
 	{

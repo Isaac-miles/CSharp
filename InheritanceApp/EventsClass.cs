@@ -24,10 +24,13 @@ namespace InheritanceApp
     //TemMonitor
     public delegate void TemperatureChangeDelegate(string message);
 
+    public class TemperatureChangeEventArgs : EventArgs
+    {
+
+    }
     public class TemMonitor
     {
-        public event TemperatureChangeDelegate TemperatureMonitoreEvent;
-
+        public event TemperatureChangeDelegate OnTemperatureMonitoreEvent;
         private int _temp;
         public int Temperature { get => _temp;
 
@@ -45,7 +48,7 @@ namespace InheritanceApp
         //the alerm event
         protected void RaiseTemperatureAlarmEvent(string message)
         {
-            TemperatureMonitoreEvent.Invoke(message);
+            OnTemperatureMonitoreEvent?.Invoke(message);
         }
 
     }
@@ -75,7 +78,7 @@ namespace InheritanceApp
             TemperatureAlert alertTemperture = new TemperatureAlert();
 
             //multiDelegate or initiate subscriptions
-            monitorTemperature.TemperatureMonitoreEvent += alertTemperture.OnTemperatureChange;
+            monitorTemperature.OnTemperatureMonitoreEvent += alertTemperture.OnTemperatureChange;
 
             monitorTemperature.Temperature = 20;
             Console.WriteLine("Enter your room temperature");

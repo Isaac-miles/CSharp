@@ -3,6 +3,16 @@ namespace InheritanceApp
 {
     public delegate void Notify(string message);
 
+    class EventPublisher
+    {
+        public event Notify OnNotify;
+
+        public void RaiseEvent(string message)
+        {
+            OnNotify?.Invoke(message);
+        }
+    }
+
     public class EventSubscribe
     {
         public void OnEventRaised(string message)
@@ -11,14 +21,13 @@ namespace InheritanceApp
         }
     }
 
-    class EventPublisher
-    {
-        public event Notify OnNotify;
+    //TemMonitor
+    public delegate void TemperatureChangeDelegate(string message);
 
-        public void RaiseEvent(string message)
-        {
-            OnNotify.Invoke(message);
-        }
+    public class TemMonitor
+    {
+        public event TemperatureChangeDelegate TemperatureMonitoreEvent;
+
     }
 
     public class EventsClass
@@ -26,7 +35,10 @@ namespace InheritanceApp
         static void Main(string[] args)
         {
             EventPublisher publiser = new EventPublisher();
-            EventSubscribe subscribe = new EventSubscribe();
+            EventSubscribe subscriber = new EventSubscribe();
+            publiser.OnNotify += subscriber.OnEventRaised;
+
+            publiser.RaiseEvent("Test");
         }
     }
 

@@ -6,6 +6,8 @@ namespace WebApIDemo.Controllers
 	[ApiController]
 	public class ShirtsController: ControllerBase
 	{
+        [HttpGet]
+        [Route("/shirts")]
         public string GetAllShirts()
         {
             return "Get all Shirts";

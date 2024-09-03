@@ -68,7 +68,7 @@ namespace InheritanceApp
     {
         public void OnTemperatureChange(object sender, TemperatureChangeEventArgs e)
         {
-            Console.WriteLine($"Alert: the temperature is hot: {+e.Temperature} and sender is: {sender} ");
+            Console.WriteLine($"Alert: the temperature is hot: {e.Temperature} and sender is: {sender} ");
         }
     }
 

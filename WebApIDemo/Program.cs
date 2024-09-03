@@ -11,7 +11,7 @@ app.UseHttpsRedirection();
 //Routing
 app.MapGet("/shirts", () =>
 {
-    return "";
+    return "Return All shirts";
 });
 
 app.MapGet("/shirts/{id}", (int id) =>

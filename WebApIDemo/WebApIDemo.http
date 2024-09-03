@@ -1,6 +1,6 @@
 ﻿@WebApIDemo_HostAddress = http://localhost:5029
 
-GET {{WebApIDemo_HostAddress}}/weatherforecast/
+GET {{WebApIDemo_HostAddress}}/shirts/
 Accept: application/json
 
 ###

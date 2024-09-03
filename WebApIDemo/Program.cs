@@ -14,8 +14,17 @@ app.MapGet("/shirts", () =>
     return "";
 });
 
+app.MapGet("/shirts/{id}", (int id) =>
+{
+    return $"Retrun shirt with the ID: {id}";
+});
+
+app.MapPost("/shirts", () =>
+{
+    return "Creating a shirt";
+});
+
+
+
 
 app.Run();
-
-
-

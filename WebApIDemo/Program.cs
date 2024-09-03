@@ -9,6 +9,11 @@ var app = builder.Build();
 app.UseHttpsRedirection();
 
 //Routing
+app.MapGet("/shirts", () =>
+{
+    return "";
+});
+
 
 app.Run();
 

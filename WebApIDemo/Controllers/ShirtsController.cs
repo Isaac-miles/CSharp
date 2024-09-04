@@ -16,9 +16,9 @@ namespace WebApIDemo.Controllers
 
         [HttpGet("{id}")]
         //[Route("/shirts/{id}")]
-        public string GetShirt(int ID)
+        public string GetShirt(int id, string color)
         {
-            return "Get the Shirts with ID:" + ID;
+            return $"Get the Shirts with ID: {id} and color {color}";
         }
 
         [HttpPost]

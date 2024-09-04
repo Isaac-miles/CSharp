@@ -15,10 +15,12 @@ namespace WebApIDemo.Controllers
         }
 
         [HttpGet("{id}")]
-        //[Route("/shirts/{id}")]
-        public string GetShirt(int id, string color)
+        //[Route("/shirts/{id}/{color}")]
+        //[FromQuery] string color / [FromRoute] string color  [FromHeader(Name ="color")] string color
+
+        public string GetShirt(int id)
         {
-            return $"Get the Shirts with ID: {id} and color {color}";
+            return $"Get the Shirts with ID: {id}";
         }
 
         [HttpPost]

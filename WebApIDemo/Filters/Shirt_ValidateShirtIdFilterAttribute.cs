@@ -21,7 +21,8 @@ namespace WebApIDemo.Filters
                 }
                 else if (!ShirtsRepository.ShirtExists(shirtId.Value))
                 {
-
+                    context.ModelState.AddModelError("ShirtId", "shirt doesn't exists");
+                    context.Result = new NotFoundObjectResult(context.ModelState);
                 }
             }
         }

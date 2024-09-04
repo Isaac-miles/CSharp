@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace WebApIDemo.Filters
@@ -9,7 +10,15 @@ namespace WebApIDemo.Filters
         {
             base.OnActionExecuting(context);
 
-            var shirtId = context.ActionArguments["id"];
+            var shirtId = context.ActionArguments["id"] as int?;
+            if (shirtId.HasValue)
+            {
+                if (shirtId.Value <=0)
+                {
+                    context.ModelState.AddModelError("ShirtId", "ShirtId is invalid");
+                    context.Result = new BadRequestObjectResult(context.ModelState);
+                }
+            }
         }
     }
 }

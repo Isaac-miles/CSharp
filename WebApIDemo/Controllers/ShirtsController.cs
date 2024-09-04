@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using WebApIDemo.Models;
 
 namespace WebApIDemo.Controllers
 {
@@ -25,9 +26,9 @@ namespace WebApIDemo.Controllers
 
         [HttpPost]
         //[Route("/shirts")]
-        public string CreateShirts()
+        public Shirt CreateShirts( [FromBody] Shirt shirt)
         {
-            return "Creating a shirt";
+            return shirt;
         }
 
         [HttpPut("{id}")]

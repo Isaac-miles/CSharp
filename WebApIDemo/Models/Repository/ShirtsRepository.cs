@@ -17,6 +17,11 @@ namespace WebApIDemo.Models.Repository
             return shirts.Any(x => x.ShirtId == id);
         }
 
+        public static Shirt? GetShirtById(int id)
+        {
+            return shirts.FirstOrDefault(x => x.ShirtId == id);
+        }
+
     }
 }
 

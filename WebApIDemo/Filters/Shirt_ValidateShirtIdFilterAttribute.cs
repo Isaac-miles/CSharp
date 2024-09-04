@@ -17,7 +17,11 @@ namespace WebApIDemo.Filters
                 if (shirtId.Value <=0)
                 {
                     context.ModelState.AddModelError("ShirtId", "ShirtId is invalid");
-                    context.Result = new BadRequestObjectResult(context.ModelState);
+                    var problemDetails = new ValidationProblemDetails(context.ModelState)
+                    {
+                        Status = StatusCodes.Status400BadRequest
+                    };
+                    context.Result = new BadRequestObjectResult(problemDetails);
                 }
                 else if (!ShirtsRepository.ShirtExists(shirtId.Value))
                 {

@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
+using WebApIDemo.Filters;
 using WebApIDemo.Models;
 using WebApIDemo.Models.Repository;
 
@@ -18,25 +19,26 @@ namespace WebApIDemo.Controllers
         }
 
         [HttpGet("{id}")]
-        //[Route("/shirts/{id}/{color}")]
-        //[FromQuery] string color / [FromRoute] string color  [FromHeader(Name ="color")] string color
+        [Shirt_ValidateShirtIdFilter]
 
         public IActionResult GetShirt(int id)
         {
             //use the IActionResult return type when your method returns different type of data
 
-            if(id <= 0)
-            {
-                return BadRequest("Invalid Id");
-            }
-            var shirt = ShirtsRepository.GetShirtById(id);
+            return Ok(ShirtsRepository.GetShirtById(id));
 
-            if(shirt == null)
-            {
-                return NotFound();
-            }
+            //if(id <= 0)
+            //{
+            //    return BadRequest("Invalid Id");
+            //}
+            //var shirt = ShirtsRepository.GetShirtById(id);
 
-            return Ok(shirt);
+            //if(shirt == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //return Ok(shirt);
         }
 
         [HttpPost]

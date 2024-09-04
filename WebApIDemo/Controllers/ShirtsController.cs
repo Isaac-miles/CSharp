@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using WebApIDemo.Models;
+using WebApIDemo.Models.Repository;
 
 namespace WebApIDemo.Controllers
 {
@@ -28,7 +29,7 @@ namespace WebApIDemo.Controllers
             {
                 return BadRequest("Invalid Id");
             }
-            var shirt = shirts.FirstOrDefault(x => x.ShirtId == id);
+            var shirt = ShirtsRepository.GetShirtById(id);
 
             if(shirt == null)
             {

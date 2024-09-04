@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using WebApIDemo.Models.Repository;
 
 namespace WebApIDemo.Filters
 {
@@ -17,6 +18,10 @@ namespace WebApIDemo.Filters
                 {
                     context.ModelState.AddModelError("ShirtId", "ShirtId is invalid");
                     context.Result = new BadRequestObjectResult(context.ModelState);
+                }
+                else if (!ShirtsRepository.ShirtExists(shirtId.Value))
+                {
+
                 }
             }
         }

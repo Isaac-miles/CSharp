@@ -14,7 +14,7 @@ namespace WebApIDemo.Models
         [Required]
 		public string? Brand { get; set; }
 
-        [Shirt_EnsureCorrectSizingAttribute]
+        [Shirt_EnsureCorrectSizing]
         public int? Size { get; set; }
 
 		public double? Price { get; set; }

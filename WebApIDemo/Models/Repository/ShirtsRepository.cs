@@ -12,6 +12,11 @@ namespace WebApIDemo.Models.Repository
 
         };
 
+        public static bool ShirtExists(int id)
+        {
+            return shirts.Any(x => x.ShirtId == id);
+        }
+
     }
 }
 

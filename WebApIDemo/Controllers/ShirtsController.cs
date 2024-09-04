@@ -15,7 +15,7 @@ namespace WebApIDemo.Controllers
         //[Route("/shirts")]
         public IActionResult GetAllShirts()
         {
-            return Ok("Get all Shirts");
+            return Ok(ShirtsRepository.GetAllShirts());
         }
 
         [HttpGet("{id}")]
@@ -45,6 +45,8 @@ namespace WebApIDemo.Controllers
         //[Route("/shirts")]
         public IActionResult CreateShirts( [FromBody] Shirt shirt)
         {
+            if (shirt == null) return BadRequest();
+
             return Ok(shirt);
         }
 

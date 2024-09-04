@@ -27,6 +27,17 @@ namespace WebApIDemo.Models.Repository
             return shirts.FirstOrDefault(x => x.ShirtId == id);
         }
 
+        public static Shirt? GetShirtByProps(string? brand, string? gender,string? color, int? size)
+        {
+            return shirts.FirstOrDefault(x =>);
+        }
+
+        public static void AddShirt(Shirt shirt)
+        {
+            int maxId = shirts.Max(x => x.ShirtId);
+            shirt.ShirtId = maxId + 1;
+            shirts.Add(shirt);
+        }
     }
 }
 

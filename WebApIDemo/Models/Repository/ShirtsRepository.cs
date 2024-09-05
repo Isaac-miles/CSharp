@@ -58,6 +58,11 @@ namespace WebApIDemo.Models.Repository
             shirtToUpdate.Size = shirt.Size;
             shirtToUpdate.Gender = shirt.Gender;
         }
+
+        public static void DeleteShirt(int shirtId)
+        {
+         
+        }
     }
 }
 

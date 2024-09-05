@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using WebApIDemo.Filters;
+using WebApIDemo.Filters.ExceptionFilters;
 using WebApIDemo.Models;
 using WebApIDemo.Models.Repository;
 
@@ -24,21 +25,7 @@ namespace WebApIDemo.Controllers
         public IActionResult GetShirt(int id)
         {
             //use the IActionResult return type when your method returns different type of data
-
             return Ok(ShirtsRepository.GetShirtById(id));
-
-            //if(id <= 0)
-            //{
-            //    return BadRequest("Invalid Id");
-            //}
-            //var shirt = ShirtsRepository.GetShirtById(id);
-
-            //if(shirt == null)
-            //{
-            //    return NotFound();
-            //}
-
-            //return Ok(shirt);
         }
 
         [HttpPost]
@@ -53,24 +40,13 @@ namespace WebApIDemo.Controllers
         [HttpPut("{id}")]
         [Shirt_ValidateUpdateShirtFilter]
         [Shirt_ValidateShirtIdFilter]
+        [Shirt_HandleUpdateException]
         //[Route("/shirts/{id}")]
         public IActionResult UpdatingShirt(int id, Shirt shirt)
         {
 
-            try
-            {
                 ShirtsRepository.UpdateShirt(shirt);
-            }
-            catch
-            {
-                if (!ShirtsRepository.ShirtExists(id))
-                {
-                    return NotFound();
-                }
-                throw;
-            }
             return NoContent();
-
         }
 
         [HttpDelete("{id}")]

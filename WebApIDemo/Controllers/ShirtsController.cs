@@ -42,16 +42,11 @@ namespace WebApIDemo.Controllers
         }
 
         [HttpPost]
+        [ValidateShirtCreatFilter]
         //[Route("/shirts")]
         public IActionResult CreateShirts( [FromBody] Shirt shirt)
         {
-            if (shirt == null) return BadRequest();
-
-            var existingShirt = ShirtsRepository.GetShirtByProps(shirt.Brand,shirt.Gender,shirt.Color,shirt.Size);
-            if (existingShirt != null) return BadRequest();
-
-            ShirtsRepository.AddShirt(shirt);
-
+          
             return CreatedAtAction(nameof(GetShirt), new {id = shirt.ShirtId }, shirt);
         }
 

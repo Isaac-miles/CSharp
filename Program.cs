@@ -26,7 +26,7 @@ app.MapGet("/api/coupon", (ILogger<Program> _logger) =>
     return Results.Ok(CouponStore.GetCoupons());
 }).WithName("GetCoupons")
   .Produces<IEnumerable<Coupon>>(200);
-s
+
 app.MapGet("/api/coupon/{id:int}", (int id) =>
 {
     return Results.Ok(CouponStore.GetCouponById(id));

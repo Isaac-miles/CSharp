@@ -19,10 +19,13 @@ if (app.Environment.IsDevelopment())
 
 app.MapGet("/api/coupon", () =>
 {
-    return Results.Ok(CouponStore.CouponList);
+    return Results.Ok(CouponStore.GetCoupons());
 });
 
-
+app.MapGet("/api/coupon/{id:int}", (int id) =>
+{
+    return Results.Ok(CouponStore.GetCoupons());
+});
 
 app.UseHttpsRedirection();
 

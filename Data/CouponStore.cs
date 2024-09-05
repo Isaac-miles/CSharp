@@ -1,4 +1,5 @@
-﻿using Web_Minimal_API.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using Web_Minimal_API.Models;
 
 namespace Web_Minimal_API.Data
 {
@@ -13,6 +14,12 @@ namespace Web_Minimal_API.Data
         public static List<Coupon> GetCoupons()
         {
             return CouponList;
+        }
+
+        public static Coupon GetCouponById(int id)
+        {
+            var coupon = CouponList.FirstOrDefault(x => x.Id == id);
+            return coupon;
         }
     }
 }

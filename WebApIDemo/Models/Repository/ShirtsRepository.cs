@@ -53,7 +53,10 @@ namespace WebApIDemo.Models.Repository
         {
             var shirtToUpdate = shirts.First(x => x.ShirtId == shirt.ShirtId);
             shirtToUpdate.Brand = shirt.Brand;
-
+            shirtToUpdate.Price = shirt.Price;
+            shirtToUpdate.Color = shirt.Color;
+            shirtToUpdate.Size = shirt.Size;
+            shirtToUpdate.Gender = shirt.Gender;
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
+
 namespace WebApIDemo.Models.Repository
 {
 	public static class ShirtsRepository
@@ -61,7 +63,11 @@ namespace WebApIDemo.Models.Repository
 
         public static void DeleteShirt(int shirtId)
         {
-         
+            var shirt = GetShirtById(shirtId);
+            if(shirt != null)
+            {
+                shirts.Remove(shirt);
+            }
         }
     }
 }

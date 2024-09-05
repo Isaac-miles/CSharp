@@ -47,7 +47,12 @@ namespace WebApIDemo.Controllers
         {
             if (shirt == null) return BadRequest();
 
-            return Ok(shirt);
+            var existingShirt = ShirtsRepository.GetShirtByProps(shirt.Brand,shirt.Gender,shirt.Color,shirt.Size);
+            if (existingShirt != null) return BadRequest();
+
+            ShirtsRepository.AddShirt(shirt);
+
+            return CreatedAtAction(nameof(GetShirt), new {id = shirt.ShirtId }, shirt);
         }
 
         [HttpPut("{id}")]

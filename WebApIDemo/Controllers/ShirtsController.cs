@@ -51,10 +51,25 @@ namespace WebApIDemo.Controllers
         }
 
         [HttpPut("{id}")]
+        [Shirt_ValidateShirtIdFilter]
         //[Route("/shirts/{id}")]
-        public IActionResult UpdatingShirt(int ID)
+        public IActionResult UpdatingShirt(int id, Shirt shirt)
         {
-            return Ok("Updating the Shirts with ID:" + ID);
+            if (id != shirt.ShirtId) return BadRequest();
+
+            try
+            {
+                ShirtsRepository.UpdateShirt(shirt);
+            }
+            catch (Exception ex)
+            {
+                if (!ShirtsRepository.ShirtExists(id))
+                {
+                    return NotFound();
+                }
+                throw;
+            }
+            return NoContent();
 
         }
 

@@ -16,10 +16,24 @@ namespace Web_Minimal_API.Data
             return CouponList;
         }
 
-        public static Coupon GetCouponById(int id)
+        public static Coupon? GetCouponById(int id)
         {
             var coupon = CouponList.FirstOrDefault(x => x.Id == id);
             return coupon;
+        }
+
+        public static Coupon CreateCoupon(Coupon coupon)
+        {
+           var maxId = CouponList.Max(x => x.Id);
+           coupon.Id = maxId + 1;
+           CouponList.Add(coupon);
+           return coupon;
+        }
+
+        public static Coupon? CouponExists(Coupon coupon)
+        {
+            var couponExists = CouponList.FirstOrDefault(x => x.Name.ToLower() == coupon.Name.ToLower());
+            return couponExists;
         }
     }
 }

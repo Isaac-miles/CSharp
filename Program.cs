@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.Eventing.Reader;
 using Web_Minimal_API.Data;
+using Web_Minimal_API.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,8 +27,29 @@ app.MapGet("/api/coupon", () =>
 
 app.MapGet("/api/coupon/{id:int}", (int id) =>
 {
-    return Results.Ok(CouponStore.GetCoupons());
+    return Results.Ok(CouponStore.GetCouponById(id));
 });
+
+app.MapPost("/api/coupon/", ([FromBody] Coupon coupon) =>
+{
+    if(coupon.Id !=null || string.IsNullOrEmpty(coupon.Name))
+    {
+        return Results.BadRequest("Invalid Id or Name");
+    };
+    else if()
+});
+
+app.MapPut("/api/coupon/{id:int}", (int id) =>
+{
+    return Results.Ok(CouponStore.GetCouponById(id));
+});
+
+app.MapDelete("/api/coupon/{id:int}", (int id) =>
+{
+    return Results.Ok(CouponStore.GetCouponById(id));
+});
+
+
 
 app.UseHttpsRedirection();
 

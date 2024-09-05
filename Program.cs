@@ -20,34 +20,48 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/api/coupon", () =>
+app.MapGet("/api/coupon", (ILogger<Program> _logger) =>
 {
+    _logger.Log(LogLevel.Information, "Getting all coupons");
     return Results.Ok(CouponStore.GetCoupons());
-});
-
+}).WithName("GetCoupons")
+  .Produces<IEnumerable<Coupon>>(200);
+s
 app.MapGet("/api/coupon/{id:int}", (int id) =>
 {
     return Results.Ok(CouponStore.GetCouponById(id));
-});
+}).WithName("GetCoupon")
+  .Produces<Coupon>(200); ;
 
 app.MapPost("/api/coupon/", ([FromBody] Coupon coupon) =>
 {
-    if(coupon.Id !=null || string.IsNullOrEmpty(coupon.Name))
+    if(coupon.Id != 0 || string.IsNullOrEmpty(coupon.Name))
     {
         return Results.BadRequest("Invalid Id or Name");
+    }
+    else if (CouponStore.CouponExists(coupon) !=null)
+    {
+        return Results.BadRequest("Coupon already exists");
     };
-    else if()
-});
+     CouponStore.CreateCoupon(coupon);
+    return Results.CreatedAtRoute("GetCoupon", new {id = coupon.Id}, coupon);
+
+   // return Results.Created($"/api/coupon/{coupon.Id}",coupon);
+}).WithName("CreateCoupon")
+  .Accepts<Coupon>("application/json")
+  .Produces<Coupon>(200)
+  .Produces(400);
 
 app.MapPut("/api/coupon/{id:int}", (int id) =>
 {
     return Results.Ok(CouponStore.GetCouponById(id));
-});
+}).WithName("UpdateCoupon")
+  .Produces<Coupon>(201);
 
 app.MapDelete("/api/coupon/{id:int}", (int id) =>
 {
     return Results.Ok(CouponStore.GetCouponById(id));
-});
+}).WithName("DeleteCoupon"); ;
 
 
 

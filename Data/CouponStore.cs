@@ -2,7 +2,7 @@
 
 namespace Web_Minimal_API.Data
 {
-    public class CouponStore
+    public static class CouponStore
     {
         public static List<Coupon> CouponList = new List<Coupon>()
         {

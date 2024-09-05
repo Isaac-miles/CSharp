@@ -46,7 +46,7 @@ namespace WebApIDemo.Controllers
         //[Route("/shirts")]
         public IActionResult CreateShirts( [FromBody] Shirt shirt)
         {
-          
+            ShirtsRepository.AddShirt(shirt);
             return CreatedAtAction(nameof(GetShirt), new {id = shirt.ShirtId }, shirt);
         }
 

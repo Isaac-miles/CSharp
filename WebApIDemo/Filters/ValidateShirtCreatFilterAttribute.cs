@@ -35,7 +35,6 @@ namespace WebApIDemo.Filters
                     };
                     context.Result = new BadRequestObjectResult(problemDetails);
                 }
-                ShirtsRepository.AddShirt(shirt);
             }
         }
     }

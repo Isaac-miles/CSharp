@@ -34,6 +34,7 @@ app.MapGet("/api/coupon/{id:int}", (int id) =>
 }).WithName("GetCoupon")
   .Produces<Coupon>(200); ;
 
+
 app.MapPost("/api/coupon/", ([FromBody] CouponCreateDto coupon_createDto) =>
 {
     Coupon coupon = new()
@@ -43,7 +44,7 @@ app.MapPost("/api/coupon/", ([FromBody] CouponCreateDto coupon_createDto) =>
         Percent = coupon_createDto.Percent,
     };
 
-    if(coupon_createDto.Id != 0 || string.IsNullOrEmpty(coupon_createDto.Name))
+    if( string.IsNullOrEmpty(coupon_createDto.Name))
     {
         return Results.BadRequest("Invalid Id or Name");
     }
@@ -52,6 +53,7 @@ app.MapPost("/api/coupon/", ([FromBody] CouponCreateDto coupon_createDto) =>
         return Results.BadRequest("Coupon already exists");
     };
      CouponStore.CreateCoupon(coupon);
+
     CouponDTO couponDTO = new()
     {
         Id = coupon.Id,

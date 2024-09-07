@@ -56,7 +56,7 @@ namespace WebApIDemo.Controllers
         public IActionResult DeletingShirt(int id)
         {
             var shirt = ShirtsRepository.GetShirtById(id);
-            ShirtsRepository.DeleteShirt(id);
+            //ShirtsRepository.DeleteShirt(id);
             return Ok(shirt);
         }
     }

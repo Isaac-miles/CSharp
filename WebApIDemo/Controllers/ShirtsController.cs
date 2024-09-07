@@ -50,11 +50,14 @@ namespace WebApIDemo.Controllers
         }
 
         [HttpDelete("{id}")]
-        //[Route("/shirts/{id}")]
-        public IActionResult DeletingShirt(int ID)
-        {
-            return Ok("Deleting the Shirts with ID:" + ID);
+        [Shirt_ValidateShirtIdFilter]
 
+        //[Route("/shirts/{id}")]
+        public IActionResult DeletingShirt(int id)
+        {
+            var shirt = ShirtsRepository.GetShirtById(id);
+            //ShirtsRepository.DeleteShirt(id);
+            return Ok(shirt);
         }
     }
 }

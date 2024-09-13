@@ -11,4 +11,4 @@ app.UseHttpsRedirection();
 //Routing
 app.MapControllers();
 
-//app.Run();
+app.Run();

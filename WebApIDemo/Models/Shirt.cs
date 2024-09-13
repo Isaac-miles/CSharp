@@ -20,7 +20,7 @@ namespace WebApIDemo.Models
 		public double? Price { get; set; }
 
         [Required]
-        //public string? Gender {get; set; }
-	}
+        public string? Gender {get; set; }
+    }
 }
 

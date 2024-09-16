@@ -1,46 +1,34 @@
 ﻿<Properties StartupConfiguration="{7AC28789-6AFB-423C-80D1-F50D480E52F2}|https">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Validations/Shirt_EnsureCorrectSizingAttribute.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="4" Column="35" />
-      <File FileName="Controllers/ShirtsController.cs" Line="59" Column="46" />
-      <File FileName="Models/Shirt.cs" Line="27" Column="1" />
+      <File FileName="Program.cs" Line="14" Column="11" />
+      <File FileName="Controllers/ShirtsController.cs" />
+      <File FileName="Models/Shirt.cs" Line="23" Column="43" />
       <File FileName="Models/Validations/Shirt_EnsureCorrectSizingAttribute.cs" Line="10" Column="67" />
-      <File FileName="Models/Repository/ShirtsRepository.cs" Line="69" Column="38" />
-      <File FileName="Filters/Shirt_ValidateShirtIdFilterAttribute.cs" Line="23" Column="23" />
-      <File FileName="Filters/ValidateShirtCreatFilterAttribute.cs" Line="25" Column="77" />
-      <File FileName="Filters/Shirt_ValidateUpdateShirtFilterAttribute.cs" Line="25" Column="77" />
-      <File FileName="Filters/ExceptionFilters/Shirt_HandleUpdateExceptionAttribute.cs" Line="8" Column="51" />
+      <File FileName="Models/Repository/ShirtsRepository.cs" />
+      <File FileName="Filters/ExceptionFilters/Shirt_HandleUpdateExceptionAttribute.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="WebApIDemo">
             <Node name="WebApIDemo">
-              <Node name="Filters" expanded="True">
-                <Node name="ActionFilters" expanded="True" />
-                <Node name="ExceptionFilters" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True">
-                <Node name="Repository" expanded="True" />
-                <Node name="Validations" expanded="True">
-                  <Node name="Shirt_EnsureCorrectSizingAttribute.cs" selected="True" />
-                </Node>
+              <Node name="Models">
+                <Node name="Validations" expanded="True" />
               </Node>
               <Node name="Properties" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.WebApIDemo PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

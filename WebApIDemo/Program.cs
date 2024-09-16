@@ -9,6 +9,6 @@ var app = builder.Build();
 
 app.UseHttpsRedirection();
 //Routing
-app.MapControllers();
+//app.MapControllers();
 
 app.Run();

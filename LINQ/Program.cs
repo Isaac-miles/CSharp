@@ -7,13 +7,17 @@ class Program
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
 
-        Console.WriteLine("Hello, World!");
     }
 
     static void OddNumbers(int[] numbers)
     {
+        IEnumerable<int> oddnumbers = from number in numbers
+                                      where number % 2 != 0
+                                      select number;
+
+        Console.WriteLine($"The, Odd Numbers are! {oddnumbers}");
 
     }
-        
+
 }
 

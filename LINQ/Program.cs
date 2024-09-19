@@ -8,7 +8,9 @@ class Program
     {
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-        OddNumbers(numbers);
+        //OddNumbers(numbers);
+
+
 
     }
 
@@ -25,6 +27,15 @@ class Program
 
         }
     }
+
+    class UniversityManager
+    {
+        public List<Student> Students;
+        public List<University> University;
+
+
+    }
+
 
     class University
     {
@@ -50,7 +61,8 @@ class Program
         public int UniversityId { get; set; }
         public void Print()
         {
-            Console.WriteLine("University {0} with Id {1} ", Name, Id);
+            Console.WriteLine("Student {0} with Id {1}, Gender {2} and Age {3} from Univerity with the Id {4} ",
+                Name, Id,Gender,Age, UniversityId);
 
         }
     }

@@ -1,4 +1,6 @@
-﻿namespace LINQ;
+﻿using System.Globalization;
+
+namespace LINQ;
 
 class Program
 {
@@ -6,6 +8,7 @@ class Program
     {
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+        OddNumbers(numbers);
 
     }
 
@@ -21,6 +24,12 @@ class Program
             Console.WriteLine($"Odd {i}");
 
         }
+    }
+
+    class University
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 
 }

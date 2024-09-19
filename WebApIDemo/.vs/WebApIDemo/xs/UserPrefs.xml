@@ -1,7 +1,5 @@
 ﻿<Properties StartupConfiguration="{7AC28789-6AFB-423C-80D1-F50D480E52F2}|https">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -9,26 +7,18 @@
     <Files>
       <File FileName="Program.cs" Line="14" Column="11" />
       <File FileName="Controllers/ShirtsController.cs" />
-      <File FileName="Models/Shirt.cs" Line="23" Column="43" />
-      <File FileName="Models/Validations/Shirt_EnsureCorrectSizingAttribute.cs" Line="10" Column="67" />
+      <File FileName="Models/Shirt.cs" />
+      <File FileName="Models/Validations/Shirt_EnsureCorrectSizingAttribute.cs" />
       <File FileName="Models/Repository/ShirtsRepository.cs" />
       <File FileName="Filters/ExceptionFilters/Shirt_HandleUpdateExceptionAttribute.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="WebApIDemo">
-            <Node name="WebApIDemo">
-              <Node name="Models">
-                <Node name="Validations" expanded="True" />
-              </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
+        <State name="__root__" />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WebApIDemo PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

@@ -16,7 +16,11 @@ class Program
                                       select number;
 
         Console.WriteLine($"The, Odd Numbers are! {oddnumbers}");
+        foreach(int i in oddnumbers)
+        {
+            Console.WriteLine($"Odd {i}");
 
+        }
     }
 
 }

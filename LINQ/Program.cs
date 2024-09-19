@@ -33,6 +33,15 @@ class Program
         public List<Student> Students;
         public List<University> University;
 
+        public UniversityManager()
+        {
+            var universities = new List<University>();
+            var students = new List<Student>();
+
+            universities.Add(new University { Id = 1, Name = "FUL" });
+            universities.Add(new University { Id = 2, Name = "UNI" });
+
+        }
 
     }
 

@@ -47,7 +47,18 @@ class Program
             students.Add(new Student { Id = 4, Name = "Austin", Gender = "Male", Age = 24, UniversityId = 1 });
             students.Add(new Student { Id = 5, Name = "Kay", Gender = "Female", Age = 23, UniversityId = 2 });
 
+        }
 
+        public void MaleStudents(List<Student> students)
+        {
+            IEnumerable<Student> maleStudents = from student in students
+                                                where student.Gender == "Male"
+                                                select student;
+
+            foreach(var s in maleStudents)
+            {
+                s.Print();
+            }
         }
 
     }

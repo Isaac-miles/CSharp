@@ -9,8 +9,9 @@ class Program
         int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
         //OddNumbers(numbers);
-
-
+        UniversityManager universityManager = new UniversityManager();
+        universityManager.MaleStudents();
+        Console.ReadLine();
 
     }
 
@@ -30,13 +31,13 @@ class Program
 
     class UniversityManager
     {
-        public List<Student> Students;
-        public List<University> University;
+        public List<Student> students;
+        public List<University> universities;
 
         public UniversityManager()
         {
-            var universities = new List<University>();
-            var students = new List<Student>();
+              universities = new List<University>();
+              students = new List<Student>();
 
             universities.Add(new University { Id = 1, Name = "FUL" });
             universities.Add(new University { Id = 2, Name = "UNI" });
@@ -49,13 +50,13 @@ class Program
 
         }
 
-        public void MaleStudents(List<Student> students)
+        public void MaleStudents()
         {
             IEnumerable<Student> maleStudents = from student in students
                                                 where student.Gender == "Male"
                                                 select student;
 
-            foreach(var s in maleStudents)
+            foreach (var s in maleStudents)
             {
                 s.Print();
             }

@@ -11,8 +11,8 @@ class Program
         //OddNumbers(numbers);
         UniversityManager universityManager = new UniversityManager();
         universityManager.MaleStudents();
-        Console.ReadLine();
-
+        //Console.ReadLine();
+        universityManager.SortStudentsByAge();
     }
 
     static void OddNumbers(int[] numbers)
@@ -67,6 +67,12 @@ class Program
             var sortStudents = from student in students
                                orderby student.Age
                                select student;
+
+            Console.WriteLine("Sorted students by AGe");
+            foreach (var s in sortStudents)
+            {
+                s.Print();
+            }
         }
 
     }

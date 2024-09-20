@@ -45,7 +45,7 @@ class Program
             students.Add(new Student { Id = 1, Name = "Mary", Gender = "Female", Age = 20, UniversityId = 1 });
             students.Add(new Student { Id = 2, Name = "Tomi", Gender = "Male", Age = 22, UniversityId = 2});
             students.Add(new Student { Id = 3, Name = "Dave", Gender = "Male", Age = 21, UniversityId = 2 });
-            students.Add(new Student { Id = 4, Name = "Austin", Gender = "Male", Age = 24, UniversityId = 1 });
+            students.Add(new Student { Id = 4, Name = "Austin", Gender = "Female", Age = 24, UniversityId = 1 });
             students.Add(new Student { Id = 5, Name = "Kay", Gender = "Female", Age = 23, UniversityId = 2 });
 
         }
@@ -60,6 +60,13 @@ class Program
             {
                 s.Print();
             }
+        }
+
+        public void SortStudentsByAge()
+        {
+            var sortStudents = from student in students
+                               orderby student.Age
+                               select student;
         }
 
     }

@@ -13,7 +13,7 @@ namespace Magic_Villa_CouponAPI.Models
 
 		public DateTime? Created { get; set; }
 
-		public DateTime LastUpdated { get; set; }
+		public DateTime? LastUpdated { get; set; }
 
 		public Coupon()
 		{

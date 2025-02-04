@@ -1,0 +1,7 @@
+﻿@Magic_Villa_CouponAPI_HostAddress = http://localhost:5106
+
+GET {{Magic_Villa_CouponAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+

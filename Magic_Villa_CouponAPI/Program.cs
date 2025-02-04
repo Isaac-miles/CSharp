@@ -15,7 +15,10 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.MapGet("/coupon", () => { });
+app.MapGet("/coupon", () =>
+{
+    return Results.
+});
 
 
 app.UseHttpsRedirection();
